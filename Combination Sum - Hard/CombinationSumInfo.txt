@@ -1,0 +1,14 @@
+Given an array of integers arr and a integer (n)
+you are asked to find the combination of integers that can be sum to become integer (n)
+
+Sample Input
+4
+2 3 6 7
+1
+8
+
+Sample Output
+Case 1 : 8
+2 2 2 2
+2 3 3
+2 6
