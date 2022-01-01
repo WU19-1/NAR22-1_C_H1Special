@@ -1,32 +1,21 @@
-#include<stdio.h>
+#include<bits/stdc++.h>
 
-int main(){
-    int n = 0;
-    scanf("%d", &n);
-    getchar();
+using namespace std;
 
-    int arr[100000] = {};
-    for (int i = 0; i < n; i++){
-        scanf("%d", &arr[i]);
-    }
-    getchar();
-
-    int last = 0;
-    for(int i = 0; i < n; i++){
-        if(arr[i] != 0){
-            arr[last++] = arr[i];
+void moveZeroes(vector<int>& nums) {
+    int zeroCounter = 0, len = nums.size();
+    for(int i = 0; i < len; i++){
+        if(nums[i] != 0){
+            nums[zeroCounter] = nums[i];
+            zeroCounter += 1;
         }
     }
-
-    for(int i = last; i < n; i++){
-        arr[i] = 0;
+    for(int i = zeroCounter; i < len; i++){
+        nums[i] = 0;
     }
+}
 
-    printf("%d", arr[0]);
-    for(int i = 1 ; i < n ; i++){
-        printf(" %d", arr[i]);
-    }
-    puts("");
-
-    return 0;
+int main(){
+	
+	return 0;
 }
