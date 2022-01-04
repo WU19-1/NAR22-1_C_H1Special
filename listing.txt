@@ -1,20 +1,20 @@
 https://leetcode.com/problems/add-binary/ -> easy
-https://leetcode.com/problems/number-complement/ -> easy
-https://leetcode.com/problems/house-robber/ -> hard
-https://leetcode.com/problems/length-of-last-word/ -> easy
-https://leetcode.com/problems/repeated-string-match/ -> hard
-https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/ -> med
-https://leetcode.com/problems/rotate-string/ -> med
-https://leetcode.com/problems/decode-ways/ -> hard
-https://leetcode.com/problems/deepest-leaves-sum/ -> med
-https://leetcode.com/problems/max-area-of-island/ -> med
-https://leetcode.com/problems/string-compression/ -> med
 https://leetcode.com/problems/combination-sum/ -> hard
+https://leetcode.com/problems/decode-ways/ -> hard
+https://leetcode.com/problems/deepest-leaves-sum/ -> easy
 Extreme Fizz Buzz -> med
+https://leetcode.com/problems/number-complement/ -> easy
+Find longest consecutive 1 from digits -> easy
+https://leetcode.com/problems/house-robber/ -> hard
+https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/ -> med
+https://leetcode.com/problems/length-of-last-word/ -> easy
+https://leetcode.com/problems/max-area-of-island/ -> med
+https://leetcode.com/problems/maximum-depth-of-binary-tree/ -> easy
 https://leetcode.com/problems/maximum-erasure-value/ ->  med
 https://leetcode.com/problems/longest-substring-without-repeating-characters/ -> med
 https://leetcode.com/problems/move-zeroes/ -> easy
+https://leetcode.com/problems/repeated-string-match/ -> hard
+https://leetcode.com/problems/rotate-string/ -> med
 https://leetcode.com/problems/simplify-path/ -> hard
-Find longest consecutive 1 from digits -> easy
-https://leetcode.com/problems/maximum-depth-of-binary-tree/ -> easy
-merge sort buat kalimat -> easy
+https://leetcode.com/problems/string-compression/ -> med
+Sorting sentence -> easy

@@ -42,6 +42,9 @@ string addBinary(string a, string b) {
 }
 
 int main(){
-	
+	string a, b;
+	cin >> a >> b;
+	cout << a << " " << b << endl;
+	cout << addBinary(a, b) << endl;
 	return 0;
 }

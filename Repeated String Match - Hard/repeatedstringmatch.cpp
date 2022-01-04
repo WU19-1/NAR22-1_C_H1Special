@@ -53,7 +53,12 @@ int repeatedStringMatch(string a, string b){
 }
 
 int main(){
-	char pattern[] = "abcd";
-	printf("%d\n", repeatedStringMatch(pattern,"cdabcdab"));
+	string a = "", b = "";
+	
+	cin >> a;
+	cin >> b;
+	
+	printf("%d\n", repeatedStringMatch(a, b));
+	
 	return 0;
 }

@@ -1,5 +1,6 @@
-#include<stdio.h>
-#include<string.h>
+#include<bits/stdc++.h>
+
+using namespace std;
 
 int findComplement(int num){
 	int ln = 0;
@@ -27,9 +28,12 @@ int findComplement(int num){
 }
 
 int main(){
-	printf("%d\n", findComplement(5));
-	printf("%d\n", findComplement(7));
-	printf("%d\n", findComplement(10));
+	int n = 0, num = 0;
+	cin >> n;
+	for(int i = 1; i <= n; i++){
+		cin >> num;
+		cout << "Case " << i << ": " << findComplement(num) << endl;
+	}
 	
 	return 0;
 }

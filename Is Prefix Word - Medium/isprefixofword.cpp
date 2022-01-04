@@ -5,12 +5,10 @@ int isPrefixOfWord(char * sentence, char * searchWord){
     char* ref = strtok(sentence, " ");
     int i = 1, j = 0, searchLen = strlen(searchWord), wordLen = 0;
     while(ref != NULL){
-//    	puts(ref);
     	wordLen = strlen(ref);
     	if (wordLen >= searchLen){
     		j = 0;
     		while (j < searchLen){
-//    			printf("%c %c\n", ref[j], searchWord[j]);
     			if (ref[j] != searchWord[j]){
     				break;
 				}
@@ -26,7 +24,11 @@ int isPrefixOfWord(char * sentence, char * searchWord){
 }
 
 int main(){
-	char sentence[] = "i love eating burger", searchWord[] = "burg";
+	char sentence[1001] = "", searchWord[101] = "";
+	scanf("%[^\n]", sentence);
+	getchar();
+	scanf("%[^\n]", searchWord);
+	getchar();
 	printf("%d\n", isPrefixOfWord(sentence, searchWord));
 	return 0;
 }

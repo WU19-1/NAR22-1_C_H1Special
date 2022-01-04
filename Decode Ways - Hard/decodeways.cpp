@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int memo[101];
+int memo[201];
 
 int decode(string s, int idx){
 	if(memo[idx] > -1) return memo[idx];
@@ -19,17 +19,12 @@ int decode(string s, int idx){
 int numDecodings(string s) {
     if (s[0] == '0') return 0;
     memset(memo, -1, sizeof(memo));
-    for(int i = 0; i < s.length(); i++)
-    	cout << memo[i] << endl;
     memo[s.length()] = 1;
     return decode(s, 0);
 }
 
 int main(){
-//	string s = "226";
-//	string s = "06";
-//	string s = "12";
-	string s = "11106";
+	string s = "346992931622696578846728753788925447162673583783832298235675765696138772995748473428811418187688951793148799318371196548763248441857177126524122549641";
 	cout << numDecodings(s) << endl;
 	return 0;
 }

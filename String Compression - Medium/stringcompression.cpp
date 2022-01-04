@@ -11,22 +11,17 @@ int compress(vector<char>& chars) {
 //    if (len == 1) return 1;
     
     for(first, second; second <= len; second++){
-    	cout << chars[second] << endl;
         if(last_character != chars[second]){
-        	cout << "masuk pertama" << endl;
             chars[first++] = last_character;
             new_len += 1;
             counter = to_string(current_count);
-            cout << "counter : " << counter << endl;
             if(current_count > 1){
-            	cout << "enter the condition" << endl;
                 for(int i = 0; i < counter.length(); i++, first++, new_len++)
                     chars[first] = counter[i];
             }
             current_count = 1;
             last_character = chars[second];
         } else {
-        	cout << "masuk kedua" << endl;
             current_count += 1;
         }
         chars[second] = '\0';
@@ -36,14 +31,15 @@ int compress(vector<char>& chars) {
 }
 
 int main(){
-//	vector<char> chars = {'a','a','b','b','c','c','c'};
-	vector<char> chars = {'a', 'a'};
-//	vector<char> chars = {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
-//	vector<char> chars = {'a', 'a', 'a', 'b', 'b', 'a', 'a'};
-	cout << endl << compress(chars) << endl;
-	for(int i = 0; i < chars.size(); i++){
-		cout << chars[i];
+	vector<char> chars = {};
+	int n = 0;
+	char c = '\0';
+	cin >> n;
+	for(int i = 0; i < n; i++){
+		cin >> c;
+		chars.push_back(c);
 	}
-	cout << endl;
+	cout << compress(chars) << endl;
+	
 	return 0;
 }

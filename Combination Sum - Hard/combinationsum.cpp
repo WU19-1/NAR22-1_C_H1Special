@@ -46,6 +46,26 @@ vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
 }
 
 int main(){
+	vector<int> candidates;
+	int target = 0, n = 0, temp = 0;
+	
+	cin >> n;
+	for(int i = 0; i < n; i++){
+		cin >> temp;
+		candidates.push_back(temp);
+	}
+	cin >> target;                     
+	combinationSum(candidates, target);
+	if(solution.size() == 0)
+		cout << "Empty" << endl;
+	else
+		for(int j = 0; j < solution.size(); j++){
+			for(int k = 0; k < solution[j].size(); k++){
+				cout << solution[j][k];
+				if (k != solution[j].size() - 1) cout << " ";
+			}
+			cout << endl;
+		}
 	
 	return 0;
 }

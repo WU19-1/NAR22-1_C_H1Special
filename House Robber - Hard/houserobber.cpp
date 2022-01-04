@@ -24,11 +24,17 @@ int rob(int* nums, int numsSize){
 
 int main(){
 	
-	int nums[] = {1,2,3,1};
-
-	int size = sizeof(nums)/sizeof(int);
-
-	printf("%d\n", rob(nums, size));
+	int arr[101], n = 0;
 	
+	scanf("%d", &n);
+	getchar();
+	
+	for(int i = 0 ; i < n; ++i){
+		scanf("%d", &arr[i]);
+	}
+	getchar();
+	
+	printf("%d\n", rob(arr, n));
+		
 	return 0;
 }

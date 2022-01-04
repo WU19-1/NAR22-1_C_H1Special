@@ -1,49 +1,39 @@
 #include<stdio.h>
 #include<math.h>
+#include<string.h>
 
-unsigned long long gcd(unsigned long long a, unsigned long long b){
-	unsigned long long temp = 0;
-	while (b != 0){
-		temp = a % b;
-		a = b;
-		b = temp;
-	}
-	return a;
-}
+char arr[100001] = "";
+int sieve[100001] = {};
+char res[100001][200];
 
 int main(){
+	int to = 0, n = 0;
 	
-	unsigned long long count = 0, n = 0;
-	
-	scanf("%llu %llu", &count, &n);
+	scanf("%d %d", &to, &n);
 	getchar();
-	
-	char arr[n + 1] = "";
-	unsigned long long multiples[n + 1];
 	
 	scanf("%[^\n]", arr);
 	getchar();
 	
-	unsigned long long gcd_all = 0;
-	unsigned long long total_all = 0;
+	int mul = 0;
 	
+	int lim = (int)(sqrt(n) + 1);
 	
 	for(int i = 0; i < n; i++){
-		scanf("%llu", &multiples[i]);
-//		if (i != 0){
-//			if (gcd_all == 0){
-//				gcd_all = multiples[i - 1] * multiples[i] / gcd(multiples[i - 1], multiples[i]);
-//			} else {
-//				gcd_all = gcd_all * multiples[i] / gcd(gcd_all, multiples[i]);
-//			}
-//		}
+		scanf("%d", &mul);
+		res[mul][sieve[mul]++] = arr[i];
+		for(int j = mul + mul; j <= to; j += mul){
+			res[j][sieve[j]++] = arr[i];
+		}
 	}
-//	printf("%llu\n", gcd_all);
+	
 	getchar();
 	
-	for(int i = 0 ; i < n; i++){
-		
+	for(int i = 1; i <= to; i++){
+		if(strcmp(res[i], "") == 0) printf("%d\n", i % 10);
+		else puts(res[i]);
 	}
 	
 	return 0;
 }
+

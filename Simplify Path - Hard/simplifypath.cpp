@@ -34,10 +34,7 @@ string simplifyPath(string path) {
             }
         }
     }
-    puts("aa");
-    cout << filtered_path.size() << endl;
     for(int i = 0; i < filtered_path.size(); i++){
-        cout << filtered_path[i] << endl;
         full_path += filtered_path[i];
         if (i != filtered_path.size() - 1)
             full_path += "/";
@@ -47,6 +44,8 @@ string simplifyPath(string path) {
 }
 
 int main(){
-	cout << simplifyPath("/a/../../b/../c//.//");
+	string path = "";
+	cin >> path;
+	cout << simplifyPath(path);
 	return 0;
 }

@@ -26,10 +26,9 @@ int lengthOfLastWord(char *s){
 }
 
 int main(){
-	char arr[] = "   fly me   to   the moon  ";
-//	char arr[] = "luffy is still joyboy";
-//	printf("%d\n", lengthOfLastWord("Hello World"));
+	char arr[200];
+	scanf("%[^\n]", arr);
+	getchar();
 	printf("%d\n", lengthOfLastWord(arr));
-//	printf("%d\n", lengthOfLastWord("luffy is still joyboy"));
 	return 0;
 }

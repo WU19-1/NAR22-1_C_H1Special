@@ -47,7 +47,18 @@ int maxAreaOfIsland(vector<vector<int>>& grid) {
 }
 
 int main(){
-	vector<vector<int>> grid = {{0,0,1,0,0,0,0,1,0,0,0,0,0},{0,0,0,0,0,0,0,1,1,1,0,0,0},{0,1,1,0,1,0,0,0,0,0,0,0,0},{0,1,0,0,1,1,0,0,1,0,1,0,0},{0,1,0,0,1,1,0,0,1,1,1,0,0},{0,0,0,0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,1,1,1,0,0,0},{0,0,0,0,0,0,0,1,1,0,0,0,0}};
+	vector<vector<int>> grid;
+	vector<int> row;
+	int y = 0, x = 0, temp = 0;
+	cin >> y >> x;
+	for(int i = 0; i < y; i++){
+		row.clear();
+		for(int j = 0; j < x; j++){
+			cin >> temp;
+			row.push_back(temp);
+		}
+		grid.push_back(row);
+	}
 	cout << maxAreaOfIsland(grid);
 	return 0;
 }
