@@ -22,8 +22,8 @@ for folder in folders:
     # print(output_path)
     # print(exe_path, open("%s/%d.in"%(input_path, 1)))
     for i in range(1, 11):
-        print("Test case %d"%(i))
-        subprocess.Popen("%s"%(exe_path), stdin=open("%s/%d.in"%(input_path, i)), stdout=open("%s/%d.out"%(output_path, i), "w"), stderr=subprocess.PIPE, shell=True)
+        print("Test case %d -"%(i), "%s/%d.in"%(input_path, i))
+        subprocess.Popen("%s"%(exe_path), stdin=open("%s/%d.in"%(input_path, i)), stdout=open("%s/%d.out"%(output_path, i)), stderr=subprocess.PIPE, shell=True)
         # output_file = open("%s/%d.out"%(output_path, i), "w")
         # o, e = cmd.communicate()
         # if o == b'':

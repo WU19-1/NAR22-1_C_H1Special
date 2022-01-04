@@ -8,8 +8,6 @@ int compress(vector<char>& chars) {
     chars.push_back('\0');
     string counter = "";
     
-//    if (len == 1) return 1;
-    
     for(first, second; second <= len; second++){
         if(last_character != chars[second]){
             chars[first++] = last_character;
@@ -31,7 +29,7 @@ int compress(vector<char>& chars) {
 }
 
 int main(){
-	vector<char> chars = {};
+	vector<char> chars;
 	int n = 0;
 	char c = '\0';
 	cin >> n;
@@ -40,6 +38,10 @@ int main(){
 		chars.push_back(c);
 	}
 	cout << compress(chars) << endl;
+	for (int i = 0; i < chars.size() - 1; i++){
+		cout << chars[i];
+	}
+	cout << endl;
 	
 	return 0;
 }
