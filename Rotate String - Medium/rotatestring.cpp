@@ -8,9 +8,7 @@ bool rotateString(string s, string goal) {
     if (goalLen < slen) return false;
     bool pre = false;
     string a = s + s;
-    cout << a << endl;
     for(int i = 0, j = 0; j < goalLen;){
-    	cout << goal[j];
     	if(i >= a.length() && j < goalLen) return false;
     	if(a[i] != goal[j] && !pre){
     		i++;

@@ -10,7 +10,7 @@ bool check(int x, int y, int xc, int yc){
     return false;
 }
 
-int dfs(vector<vector<int>>& grid, int x, int y, int xc, int yc){
+int dfs(vector< vector<int> >& grid, int x, int y, int xc, int yc){
     visited[y][x] = true;
     if (grid[y][x] == 0) return 0;
     int res = 1;
@@ -26,7 +26,7 @@ int dfs(vector<vector<int>>& grid, int x, int y, int xc, int yc){
     return res;
 }
 
-int maxAreaOfIsland(vector<vector<int>>& grid) {
+int maxAreaOfIsland(vector< vector<int> >& grid) {
     int max = 0, area = 0, xc = 0, yc = 0;
     memset(visited, false, sizeof(visited));
     yc = grid.size();
@@ -47,7 +47,7 @@ int maxAreaOfIsland(vector<vector<int>>& grid) {
 }
 
 int main(){
-	vector<vector<int>> grid;
+	vector< vector<int> > grid;
 	vector<int> row;
 	int y = 0, x = 0, temp = 0;
 	cin >> y >> x;

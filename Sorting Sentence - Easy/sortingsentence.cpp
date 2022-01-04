@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 
-char arr[1001][101];
-char temp[1001][101];
+char arr[10001][1001];
+char temp[10001][1001];
 
 void merge(int left, int right){
 	if(left == right) return;
@@ -25,6 +25,7 @@ void merge(int left, int right){
 		strcpy(temp[idx], arr[i]);
 		idx += 1, i += 1;
 	}
+	
 	while(j <= right){
 		strcpy(temp[idx], arr[j]);
 		idx += 1, j += 1;
@@ -35,6 +36,19 @@ void merge(int left, int right){
 }
 
 int main(){
+	
+	int n = 0;
+	scanf("%d", &n);
+	getchar();
+	for(int i = 0 ; i < n; i++){
+		scanf("%[^\n]", arr[i]);
+		getchar();
+	}
+	
+	merge(0, n - 1);
+	for(int i = 0; i < n ; i++){
+		printf("%s\n", arr[i]);
+	}
 	
 	return 0;
 }
