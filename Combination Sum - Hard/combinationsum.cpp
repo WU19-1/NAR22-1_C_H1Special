@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector<vector<int>> solution;
+vector< vector<int> > solution;
 
 bool check(vector<int> temp){
     bool test = true;
@@ -38,7 +38,7 @@ void solve(vector<int>& temp, vector<int>& candidates, int target, int idx){
     }
 }
 
-vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+vector< vector<int> > combinationSum(vector<int>& candidates, int target) {
 	solution.clear();
     vector<int> temp;
     solve(temp, candidates, target, 0);
@@ -57,14 +57,14 @@ int main(){
 	cin >> target;                     
 	combinationSum(candidates, target);
 	if(solution.size() == 0)
-		cout << "Empty" << endl;
+		cout << "Empty\r\n";
 	else
 		for(int j = 0; j < solution.size(); j++){
 			for(int k = 0; k < solution[j].size(); k++){
 				cout << solution[j][k];
 				if (k != solution[j].size() - 1) cout << " ";
 			}
-			cout << endl;
+			cout << "\r\n";
 		}
 	
 	return 0;

@@ -1,0 +1,220 @@
+ Fig. 2 Virtual Machine architecture [11]. 
+(Representational state transfer) API and a command line 
+(public or private) by using docker hub feature. 
+1. Introduction 
+2. Docker 
+2015). The time required to build a container is very fast 
+230 IJCSNS International Journal of Computer Science and Network Security, VOL.17 No.3, March 2017 
+3. Docker Inside 
+3.1 Docker Client and Server 
+3.2 Docker Images 
+3.3 Docker Registries 
+3.4 Docker Containers 
+4. Virtual Machine vs. Docker 
+5. Advantages of Docker Container 
+5.1 Speed 
+5.2 Portability 
+5.3 Scalability 
+5.4 Rapid Delivery 
+5.5 Density 
+According to Waldspurger (2002), in the Linux containers, 
+Containers can be pushed for testing once they have been 
+Containers. When the benefits of using docker are 
+Docker Registries, and Docker Containers. These 
+Docker can be explained as a client and server based 
+Docker containers can easily be deployed into the cloud based environment [2]. 
+Docker has the ability that it can be deployed in several 
+Docker image creates a docker container. Containers hold 
+Docker images are placed in docker registries. It works 
+Docker instead of having virtual machines. 
+Docker is an open source platform that run applications and 
+Docker provides a facility to automate the applications 
+Docker uses the resources that are available more efficiently 
+Even thou, the technologies of the container have been 
+Fig. 1 Docker architecture [9]. 
+Fig. 3 Docker Container architecture [11]. 
+Figure 3 shows that in single control host there are many 
+For example, suppose an organisation provides email 
+Furthermore, both Docker and OpenVZ have been under 
+Hypervisor is lying between host and guest operating 
+IJCSNS International Journal of Computer Science and Network Security, VOL.17 No.3, March 2017 229
+IJCSNS International Journal of Computer Science and Network Security, VOL.17 No.3, March 2017 231
+In many enterprises, virtual machines are used to perform 
+Linux containers are managed by the docker tool and it is 
+Linux containers, which are isolated. Resources such as 
+Linux kernel and it also deals with cgroups without starting 
+Machine and Docker. Sections 5 and 6 will discuss the 
+Network, Memory, CPU, and Block I/O are allocated by 
+Speed is one of the most exceedingly touted advantages of 
+The article is organised as follow. Next section will 
+The container takes less time for installation as compared to 
+The demand and the advancement of Linux containers 
+The docker server gets the request from the docker client 
+The format of a Docker Containers is standardized so 
+The responsibility of the administrator is to deploy and 
+There are four main internal components of docker, 
+There are two methods to build an image. The first one is to 
+This paper is a review on technology of docker, and will 
+Those applications that are built inside docker containers 
+Ubuntu 14.04 LTS, or Fedora 20. The images of operating 
+Ubuntu OS. 
+VMWare, because of overhead incurred, it is not easy to run 
+Virtualization is an old concept, which has been in used in 
+[10]. Mostly in these cases, there is no use of any associated 
+[12]. 
+[6]. Turnbull (2014) concludes by saying that docker is 
+a container. These containers keep running in an isolated 
+a public registry where everyone can pull available images 
+a workload would not affect the efficiency of the resources. 
+above 50 requests of the containers can be executed. 
+access to containers as containers also use the same kernel 
+according to the need [5]. 
+achieved when codes are moved between development, test 
+advantages and disadvantages of docker container, 
+all the supporting dependencies into a standard form called 
+also be run on every Linux machine. Containers can easily 
+also decreases rapidly. Root users of Linux can easily get 
+amazingly simple [9]. Certainly, you can begin with a 
+an architecture is to manage CPU and distribute its 
+analyse its performance by a systematic literature review. 
+and compare it with other container technologies. Finally, 
+and docker client can be run on the same machine or a local 
+and improved environment, so predictable results can be 
+and multi-tenancy. Virtualized resources play the main role 
+and operating system. The isolation of docker is not as 
+and production systems (Chavis & Architect, 2015). 
+and push their own images without creating an image from 
+and then process it accordingly. The complete RESTful 
+application, as depicted in Figure 1.
+application, which is running in the docker container from 
+applications inside the docker container. Containers can 
+applications that are built in the docker are packaged with 
+applications would not be able to run in a containerized 
+applications. Therefore, on a weak configured machine, 
+architecture of the Docker Container. 
+are all tested [12]. Docker provides a reliable, consistent, 
+are extremely portable. These portable applications can 
+are speed, portability, scalability, rapid delivery, and 
+around for over 10 years, but docker, a generally new 
+be moved from a cloud environment to local host and from 
+be run efficiently and moreover it provides an extra facility 
+because it does not use a hypervisor. This is the reason that 
+because they are really small. Development, testing, and 
+build an image by using a read-only template. The 
+building an image. 
+built and then from there, on to the production environment 
+by docker container. The main advantages of docker 
+can be pushed or pulled from a single source. There are two 
+can be run in an isolated way. For example, suppose there 
+can be seen in the last few years. Docker has become 
+can convey more virtual situations than different 
+client binary are shipped by docker. Docker daemon/server 
+cloud computing, after IaaS has been accepted as a crucial 
+component by sandboxing them utilizing OpenVZ or 
+components will be explained in details in the following 
+computer for testing before production [9]. Russell (2015) 
+computing. The Figure 2 shows the architecture of the 
+confirms that, as quick as it is possible docker allows you to 
+containers will be briefly summarised, following with a 
+correspondingly to source code repositories where images 
+create and control containers. Besides that, applications can 
+daemon, which is running on another machine [9]. 
+density. 
+dependencies embedded within the applications and they 
+dependencies or OS level libraries or any kernel data 
+deployment can be done faster as containers are small. 
+detailed description of docker and its components will be 
+developer. These virtualized applications can easily be 
+docker can easily coordinate with third-party instruments, 
+docker client can be connected with a remote server or 
+docker file. The docker file contains a list of instructions 
+docker with a simple configuration system, a docker binary 
+easily be done; the scale can simply be adjusted by the user 
+easily be moved as a single element and the performance 
+easily be packed into lightweight docker containers by the 
+element testing. In this process, a lot of CPU resources and 
+engine on top of it. The way that docker is designed is to 
+environment where the applications are virtualized and 
+executed, docker adds up an extra layer of deployment 
+file and builds an image. This is an automated way of 
+foundation of every image is a base image. Operating 
+give a quick and a lightweight environment where code can 
+great examination in terms of their security aspects. When 
+higher than VMs. 
+highlighted, it would be incredible not to mention about the 
+hopeful is right now a standout amongst the best 
+image by modifying it, but it is necessary to build a new 
+image is run with docker run command, then a container 
+image. The process of building a new image is called 
+in section 9 and 10, features in virtual machines and 
+in solving the problems using the core technique of cloud 
+including Docker Client and Server, Docker Images, 
+innovations, on the same equipment. To wrap things up, 
+innovations, since it accompanies new capacities that prior 
+introduce the technology of docker. In Section 3, a more 
+is an image of Ubuntu OS with SQL SERVER, when this 
+is higher because of higher density and no overhead wastage 
+isolation is reduced, it directly affects the security, which 
+it could manage to transfer messages to the agent, logs and 
+its primary host. Additionally, it is possible that some of the 
+maintain the server with containers, whereas the 
+makes the process easier to develop, distribute. The 
+memory space are consumed. Whereas, container 
+more containers can be run on a single host as compared to 
+more than ten virtual machines [13]. Up to a great extent, 
+of abstraction might effect in terms of performance [1]. 
+of resources [5].
+of the proficient work process to take the code from the 
+operating system and CPU. The virtualization divides it into 
+operating system in the server. It works between the 
+physical servers, data servers, and cloud platforms. It can 
+popular very quickly, because of the benefits provided 
+presented. Section 4 briefly compare technology of Virtual 
+programmers do not have to stress over one another’s tasks. 
+recent researches on measuring the performance of Docker 
+remains the same [12]. 
+report delivery failure if the product is installed in the cloud 
+resources more proficiently. In any example of Hyper-V or 
+respectively. In Section 6 and 7, we briefly review few 
+responsibility of the programmer is to look after the 
+running OS. Base image can also be created from the 
+scratch. Required applications can be added to the base 
+second one is Full Virtualization [3]. Figure 3 depicts the 
+sections. 
+security services. The major functions of these services are 
+short summary of the paper. 
+speed of docker in the conversation (Chavis & Architect, 
+strong as a virtual machine, even though docker isolates the 
+structure. Therefore, it is worthwhile to containerized every 
+system create a container with an ability of complete 
+system images are basically the base images, such as 
+system. 
+systems. It is a virtual platform and it handles more than one 
+technique for system constitution, resource provisioning, 
+technologies did not have. Initially, it gives the facility to 
+technology and they need to run on a different operating 
+technology provides a guarantee to their users that excess of 
+terminal it follows all the instructions given in the docker 
+test your code and deploy it into the production environment 
+the scratch. Images can be distributed to a particular area 
+the whole kit required for an application, so the application 
+there back to cloud again at a fast pace. Adjustments can 
+this issue has been solved by the containers. Containers only 
+to check emails for viruses, spam, and malware. Moreover, 
+two segments: the first one is Para-Virtualization and the 
+types of registries, public and private. Docker Hub is called 
+used as a method of operating system level virtualization. 
+utilize those resources, which are needed for the services or 
+virtual machine. 
+virtual machines, so the adaptability of containers is much 
+virtual machines. The performance of a Docker Containers 
+virtualization machine [8]. 
+way on top of the operating system’s kernel. The extra layer 
+when they are deployed into Containers. In a Container 
+when “Docker build” command is run from the bash 
+which help to easily deploy and manage docker containers. 
+will be created and SQL SERVER will be running on 
+with Linux kernel. 
+work in every environment as they have all the required 
+worked anywhere without any alteration. Moreover, docker 
+“committing a change”. The second method is to create a 

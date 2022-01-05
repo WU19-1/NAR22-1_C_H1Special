@@ -11,7 +11,7 @@ del folders[0]
 print(len(folders))
 for folder in folders:
     input_path = "./%s/input"%(folder)
-    output_path = "./%s/output"%(folder)
+    output_path = "./%s/newoutput"%(folder)
     exe_path = ""
     for p in os.listdir("./%s/"%(folder)):
         if ".exe" in p:
@@ -23,7 +23,7 @@ for folder in folders:
     # print(exe_path, open("%s/%d.in"%(input_path, 1)))
     for i in range(1, 11):
         print("Test case %d -"%(i), "%s/%d.in"%(input_path, i))
-        subprocess.Popen("%s"%(exe_path), stdin=open("%s/%d.in"%(input_path, i)), stdout=open("%s/%d.out"%(output_path, i)), stderr=subprocess.PIPE, shell=True)
+        subprocess.Popen("%s"%(exe_path), stdin=open("%s/%d.in"%(input_path, i)), stdout=open("%s/%d.ans"%(output_path, i), "w"), stderr=subprocess.PIPE, shell=True)
         # output_file = open("%s/%d.out"%(output_path, i), "w")
         # o, e = cmd.communicate()
         # if o == b'':

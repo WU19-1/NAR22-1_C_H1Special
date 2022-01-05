@@ -1,0 +1,6 @@
+# Problem exported by DOMjudge on 2022-01-05T06:28:16+00:00
+---
+name: Total Combination of Decoded Message
+validator_flags: case_sensitive space_change_sensitive
+limits:
+    memory: 8

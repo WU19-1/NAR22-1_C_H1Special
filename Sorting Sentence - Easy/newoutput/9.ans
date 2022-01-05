@@ -1,0 +1,1343 @@
+ OLAP = On-Line Analytical Processing
+ OLTP = On-Line Transaction Processing
+"Data Supplier" "Wholesale
+"Distribution"
+"Procurement" "Retail Level" "Data Consumer"
+(1992): The Impact of Data Integration on the Costs and
+(Figure 4).
+(ISO) (1987), Information Processing Systems - Concepts and Terminology for the Conceptual Schema and
+(M. Jeusfeld, H. Shu, M. Staudt, G. Vossen, eds.)
+(Product). The aggregated facts are quantity and item
+(Sale Item).
+(a) Ignore the intersection entity (eliminate it from
+(b)
+(b) Convert the many-to-many relationship to a oneto-many relationship, by defining a “primary”
+(c)
+(c) Include it as a many-to-many relationship in the
+(fully expanded hierarchies) results in the best solution.
+(the grouping attributes). Aggregation attributes must
+) environment and techniques used to design operational databases are inappropriate for designing data warehouses. For this reason, Kimball proposed a new technique for data modelling specifically for designing data warehouses,
+) environment is profoundly different
+1
+1 Collins St, Melbourne, Australia 3000.
+1. BANKER, R.D., AND KAUFFMAN, R.J. (1991): Reuse and Productivity in Integrated Computer Aided
+1. Develop Enterprise Data Model (if one doesn’t
+1. INTRODUCTION
+1. Transaction entity (highest precedence)
+10. GLASSEY, K. (1998): Seducing the End User, Communications of the ACM, September.
+11. GOODHUE, D.L., KIRSCH, L.J., AND WYBO, M.D.
+12. GRAHAM, S., COBURN, D. and OLESON, C. (1996):
+13 (6), June: 377-387.
+13. HALPIN, T. (1995): Conceptual Schema and Relational
+14. HITCHMAN, S. (1995) Practitioner Perceptions On
+15. INMON, W. (1996): Building the Data Warehouse (2nd
+16. INTERNATIONAL STANDARDS ORGANISATION
+17. KIMBALL, R. (1996): The Data Warehouse Toolkit,
+18. KIMBALL, R. (1997): A Dimensional Manifesto,
+19. LEWIS, D. (1999): “Use and Abuse of a Meta-Data
+2
+2. BATINI, C., CERI, S. AND NAVATHE, S.B. (1994)
+2. Classification entity
+2. DIMENSIONAL MODELLING
+2. Design Central Data Warehouse: this will be
+20. LOVE, B. (1994): Enterprise Information Technologies,
+21. MARTIN, J. (1983): Strategic Data Planning Methodologies, Prentice-Hall.
+22. MOODY, D.L. AND SIMSION, G.C. (1995) Justifying
+23. POKORNY, J. (1998): Data Warehouses: A Modelling
+24. SAGER, M.J. (1988): Data-centred Enterprise Modelling Methodologies - A Study Of Practice And Potential. Australian Computer Journal, August.
+25. SEN, A. and JACOB, V.S. (1998): Industrial Strength
+26. SHANKS, G.G. (1996): “Enterprise Data Architectures:
+27. SIMSION, G.C. (1994): Data Modelling Essentials,
+3. CHEN, P.P. (1976): The Entity Relationship Model:
+3. Classify Entities: classify entities in the central
+3. Component entity (lowest precedence)
+3. DATA WAREHOUSE DESIGN
+4. CHEN, P.P. (1983): A Preliminary Framework for Entity-Relationship Models, in Chen, P.P. (ed.) The Entity-Relationship Approach to Information Modelling
+4. FROM ENTITY RELATIONSHIP
+4. Identify Hierarchies: identify the hierarchies which
+5. CODD, E.F. (1970) A Relational Model of Data for
+5. CONCLUSION
+5. Design Data Marts: develop star cluster schemas
+6. DAMPNEY, C.N.G. (1996): Corporate Genera or Corporate Trivia—Can We Really Base Applications on
+7. DEVLIN, B. (1997): Data Warehouse: From Architecture to Implementation, Addison-Wesley, Reading,
+8. GARDNER, S.R. (1998): Building the Data Warehouse,
+9. GILES, J. (1999): Data Warehousing: Is It Just First
+A Methodology for Data Warehouse and Data Mart Design
+A Study of Practice”, First Australian Data Management Conference, Melbourne, Australia, December 2-3.
+A component entity is one which is directly related
+A flat schema is the simplest schema possible without losing information. This is formed by collapsing all
+A hierarchy is called maximal if it cannot be extended upwards or downwards by including another
+A major reason for the complexity of operational
+A more concrete example of a star schema is shown
+A separate star schema is produced for each transaction table in the original data model.
+A simple example is used to illustrate the design approach. Figure 5 shows an operational data model for a
+A star cluster schema may be produced from an Entity Relationship model using the following procedure.
+A star schema can be easily derived from an Entity
+A terraced schema is formed by collapsing entities
+APPROACH
+Abstract
+According to Kimball (1996, 1997), the data warehousing (OLAP1
+Aggregation or denormalisation at this stage will lose
+Aid?, in D.L. Moody (ed.) From Data to Information to
+An entity is called minimal if it is at the bottom of a
+An important component of any transaction is
+Approach, Benjamin Cummings, Redwood City, California.
+As in many design problems, the optimal solution is a
+Average Quantity
+Back End Front End
+Benefits of Information Systems, MIS Quarterly, 16(3),
+CONCEPTS
+Car
+Careful analysis is still required to identify the entities
+Central Data Warehouse Design
+City code 
+City name 
+Classification Entities
+Classification entities are entities which are related
+Combining Dimension Tables
+Combining Fact Tables
+Communications of the ACM, September.
+Complexity
+Component Entities
+Component entities define the details or “components”
+Conceptual Database Design: An Entity Relationship
+Constellation Schema
+Corporate Data Models? Proceedings of the First Australian DAMA Conference, Melbourne, Australia, December 1-2.
+Country State City
+Country code 
+Country name
+Creating dimension tables for each component entity
+Cust-Id
+Cust-Id
+Cust-Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id
+Cust_Id Prod_Type_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Name
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Id
+Cust_Regn_Name
+Cust_Regn_Name
+Cust_Regn_Name
+Cust_State_Id
+Cust_State_Id
+Cust_State_Id
+Cust_State_Name
+Cust_State_Name
+Cust_State_Name
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Id
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Cust_Type_Name
+Customer
+Customer
+Customer
+Customer
+Customer
+Customer 
+Customer 
+Customer Customer
+Customer Customer 
+Customer Customer 
+Customer Customer 
+Customer Customer 
+Customer ID
+Customer Name 
+Customer Prod_Id
+D. Moody, M. Kortink 5- 1
+D. Moody, M. Kortink 5- 10
+D. Moody, M. Kortink 5- 11
+D. Moody, M. Kortink 5- 12
+D. Moody, M. Kortink 5- 2
+D. Moody, M. Kortink 5- 3
+D. Moody, M. Kortink 5- 4
+D. Moody, M. Kortink 5- 5
+D. Moody, M. Kortink 5- 6
+D. Moody, M. Kortink 5- 7
+D. Moody, M. Kortink 5- 8
+D. Moody, M. Kortink 5- 9
+DBMS Online, August, 1997.
+DIMENSION TABLE
+DIMENSION TABLE
+Daniel L. Moody
+Data 
+Data Mart Design
+Data Model
+Data Sources
+Data Warehouse Architecture
+Data Warehousing, Communications of the ACM, September.
+Data marts represent the “retail” level of the data
+Data warehousing is based on a supply chain metaphor. The data “product” is obtained from data “suppliers” (operational systems or external sources) and is
+Data warehousing is currently one of the most important applications of database technology in practice.
+Database Design: A Fact Oriented Approach, Prentice
+Databases
+Date
+Date
+Date
+Date
+Date
+Date
+Date
+Date
+Decision 
+Department of Information Systems,
+Design Options
+Dimension
+Dimension
+Dimension
+Dimension
+Dimension
+Dimension 
+Dimension 
+Dimension 
+Dimension 
+Dimension tables are often highly denormalised tables, and generally consist of embedded hierarchies.
+Dimensional Design Options
+Dimensional Modelling
+Discount
+Discount
+Discount
+Discount
+Discount
+Discount_Amt
+Discount_Amt
+Each of these options represent different trade-offs
+Each star cluster is formed by:
+Edition), New York: J. Wiley & Sons.
+End User/ 
+Example Data Model
+External 
+Extract 
+FACT TABLE
+Fact Table
+Fact tables with the same primary keys (i.e. the same
+Federated Data Warehouse Architecture
+Fee
+Fee
+Fee
+Fee
+Fee
+Fee
+Fee
+Fee
+Fee 
+Fee 
+Fee 
+Fee_Type_Id
+Fee_Type_Id
+Fee_Type_Id
+Fee_Type_Id
+Fee_Type_Id
+Fee_Type_Id
+Fee_Type_Name
+Fee_Type_Name
+Fee_Type_Name
+Fee_Type_Name
+Figure 1. Data Warehouse Architecture
+Figure 10. Aggregation Operator
+Figure 11. Flat Schema
+Figure 12. Terraced Schema
+Figure 13 shows the star schema that results from
+Figure 13. Sale Star Schema
+Figure 14 shows the star schema which results from
+Figure 14. Sale Item Star Schema
+Figure 15 links between fact tables are shown in bold.
+Figure 15. Sales Constellation Schema
+Figure 16 shows the snowflake schema which results
+Figure 16. Sale Snowflake Schema
+Figure 17. Intersecting Hierarchies in Example
+Figure 18 shows the star cluster schema that results
+Figure 18. Star Cluster Schema
+Figure 19 shows how entities in the original data
+Figure 19. Revised Clustering
+Figure 2. Star Schema (Generic Structure)
+Figure 20. Multiple Classification
+Figure 21. Design Options
+Figure 22. Conversion of Subtypes to
+Figure 23. Design Trade-offs
+Figure 3. Star Schema Example
+Figure 4. Embedded Hierarchies in Customer
+Figure 5. Example Data Model
+Figure 6 shows the classification of the entities in
+Figure 6. Entity Classifications
+Figure 7 Example of Hierarchy
+Figure 8. State Entity “collapsed” into Region
+Figure 9 shows Region being collapsed into Location. We can continue doing this until we reach the
+Figure 9. Region Entity “collapsed” into Location
+Fiscal_Yr
+Fiscal_Yr
+Fiscal_Yr
+Fiscal_Yr Sum(Discount_Amt)
+Fiscal_Yr Sum_of_Discount
+Flat Schema
+For example, Customer, which represents a single dimension in the star schema above, consists of three
+For example, an insurance claim records a particular
+For example, if an entity can be classified as either a
+For example, in the model below, each client may be
+For example, we could apply the aggregation operator to the Sale Item entity to create a new entity
+Fork entities can be identified as classification entities
+From Enterprise Models to Dimensional Models:
+Galaxy Schema
+Group
+Hall, Sydney.
+Handling Subtypes
+Hierarchical Form
+Hierarchies are an extremely important concept in
+Hierarchy
+Hierarchy
+Hierarchy
+Higher level entities can be “collapsed” into lower
+If required, views may be used to reconstruct a star
+Impact of Data Warehousing, International Data Corporation (IDC) Ltd. Canada.
+Implications for Data Warehouse Design
+In a star schema, hierarchies in the original data
+In hierarchical terminology:
+In practice, dimensional modelling is an iterative
+In some cases, entities may fit into multiple categories. We therefore define a precedence hierarchy for
+In the early 90’s, data warehousing was proposed as
+In the example data model, a fork occurs at the Region entity. Region is a parent of Location and Customer, which are both components of the Sale transaction. In the star schema representation, State and Region would be included in both the Location and Customer dimensions when the hierarchies are collapsed.
+In this paper, we argue that Entity Relationship
+Increased 
+Increased 
+Industry 
+Industry 
+Industry Client
+Industry Client
+Industry Client Industry Client
+Industry Code 
+Industry Group Code 
+Industry Group Name 
+Industry Industry 
+Industry Name 
+Industry Sector Code 
+Industry Sector Name 
+Industry Type Industry Class Industry Client 
+Instead of a number of discrete star schemas, the example data model can be transformed into a constellation schema. A constellation schema consists of a set
+Invariably, it is these events that decision makers want
+Investment in Information Resource Management, Australian Journal of Information Systems, 3(1), September: 25-37.
+Item
+Item
+Item
+Item
+Item
+Item
+Item
+Item
+Item
+Item
+Item table. Adding the discount amounts together then
+Kimball (1996) argues that “snowflaking” is undesirable, because it adds complexity to the schema and
+Kimball (1996) claims that use of star schemas to design data warehouses results in 80% of queries being
+Kimball argues that modelling in a data warehousing
+Kimball’s (1996) top-down analysis approach.
+Kimball’s design method is a “first principles” approach, which is based on analysis of user query requirements. It begins by identifying the relevant
+Knowledge: Managing the Unmanageable, Proceedings
+Large Shared Data Banks, Communications of the ACM,
+Level"
+Load 
+Loc-Id
+Loc-Id
+Loc-Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id
+Loc_Id Loc_Type_Id
+Loc_Id Loc_Type_Id
+Loc_Id Loc_Type_Id
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name
+Loc_Name Regn_Name
+Loc_Name Regn_Name
+Loc_Name Regn_Name
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Id
+Loc_Regn_Name
+Loc_Regn_Name
+Loc_Regn_Name
+Loc_State_Id
+Loc_State_Id
+Loc_State_Id
+Loc_State_Name
+Loc_State_Name
+Loc_State_Name
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Id
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Loc_Type_Name
+Location
+Location
+Location
+Location
+Location
+Location
+Location
+Location 
+Location 
+Location 
+Location 
+Location 
+Location 
+Location 
+Location Type, Product Type and Fee Type.
+Love, 1994). Data warehousing requires a major shift
+MODELS
+MODELS TO DIMENSIONAL
+Management of Data Warehouses (DMDW'2000)
+Many to Many Relationships
+Mark A.R. Kortink
+Market 
+Market 
+Market 
+Market Sector Code 
+Market Sector Name 
+Market Segment Code 
+Market Segment Name
+Mass.
+Maximal Hierarchy
+More generally, a set of star schemas or constellations can be combined together to form a galaxy. A
+Most of the complexities which arise in converting a
+Mth
+Mth
+Mth
+Mth Posted_Date
+Mth Posted_Date
+New York: J. Wiley & Sons.
+Objectives of Dimensional Modelling
+Objectives of this Paper
+One of the most important issues in data warehousing is how to design appropriate database structures to
+Operational 
+Operator 1: Collapse Hierarchy
+Operator 2: Aggregation
+Operators For Producing Dimensional Models
+Option 1: Flat Schema
+Option 2: Terraced Schema
+Option 3: Star Schema
+Option 4: Snowflake Schema
+Option 5: Star Cluster Schema
+Outlet
+Overlap
+Overlapping dimensions can be identified via
+Period
+Period Sale
+Period Sale
+Period Sale
+Period Sale
+Period Sale
+Perspective, Proceedings of the 7th International Conference on Information Systems Development, Bled,
+Posted
+Posted 
+Posted 
+Posted 
+Posted 
+Posted 
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Date
+Posted_Fiscal_Yr
+Posted_Fiscal_Yr
+Posted_Fiscal_Yr
+Posted_Mth
+Posted_Mth
+Posted_Mth
+Posted_Qtr
+Posted_Qtr
+Posted_Qtr
+Posted_Yr
+Posted_Yr
+Posted_Yr
+Practice
+Proceedings of the International Workshop on Design and
+Processes
+Processes
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Id
+Prod_Name
+Prod_Name
+Prod_Name
+Prod_Name
+Prod_Name
+Prod_Type_Id
+Prod_Type_Id
+Prod_Type_Id
+Prod_Type_Id
+Prod_Type_Id
+Prod_Type_Id
+Prod_Type_Name
+Prod_Type_Name
+Prod_Type_Name
+Prod_Type_Name
+Product
+Product
+Product
+Product 
+Product 
+Product 
+Qtr
+Qtr
+Qtr
+Qtr
+Qtr
+Qty
+Qty
+Qty
+Qty
+Qty
+Qty
+Qty
+REFERENCES
+Redundancy
+Region
+Region
+Region
+Region 
+Region State
+Region State
+Region State
+Region entity contains its original attributes plus the
+Registry”, Fourth Australian Data Management Conference, Melbourne, Australia, October 11-13.
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Id
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Regn_Name
+Relationship Model, European Journal of Information
+Relationship model. Each star schema is formed in the
+Resolving Ambiguities
+Retail 
+SPSS. Note that this structure does not lose any information from the original data model. It contains redundancy, in the form of transitive and partial dependencies, but does not involve any aggregation. One problem with a flat schema is that it may lead to aggregation
+SUB-DIMENSION
+SUM (Discount)
+SUM (Discount)
+SUM (Discount)
+Sale
+Sale
+Sale
+Sale
+Sale
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale 
+Sale Location Region
+Sale Location Region State
+Sale Location Region State
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Date
+Sale_Fiscal_Yr
+Sale_Fiscal_Yr
+Sale_Fiscal_Yr
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Id
+Sale_Mth
+Sale_Mth
+Sale_Mth
+Sale_Qtr
+Sale_Qtr
+Sale_Qtr
+Sale_Yr
+Sale_Yr
+Sale_Yr
+Sales Summary
+Sector
+Sector
+Segment
+Segmentation
+September: 293-311.
+Simsion Bowles & Associates
+Slovenia, Plenum Press.
+Snowflake Schema
+Software Engineering: An Empirical Study, MIS Quarterly,
+Star Cluster Schema
+Star Schema
+Star Schema Design Approach
+Star Schemas
+State
+State
+State code 
+State entity being collapsed into the Region entity. The
+State name 
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Id
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+State_Name
+Step 1. Classify Entities
+Step 2. Identify Hierarchies
+Step 3. Produce Dimensional Models
+Step 4. Evaluation and Refinement
+Stockholm, Sweden, June 5-6, 2000
+Sub-dimension
+Such a model is typical of data models that are used
+Such a schema is similar to the “flat files” used by
+Sum_of_Fee
+Sum_of_ItemCost
+Sum_of_Qty
+Sum_of_Qty
+Sum_of_Value
+Summary
+Summary of the Method
+Supertype/subtype relationships can be converted to
+Systems, 4, 31-40.
+Table 1
+Table 2
+Table 3
+Table 4
+Terraced Schema
+The Foundations of Wisdom: A Study of the Financial
+The Problem Addressed
+The Use Of Some Semantic Concepts In The Entity
+The advantage of using star schemas to represent
+The advantages of this approach are:
+The aggregation attributes and functions used depend on the application.
+The aggregation operator can be applied to a transaction entity to create a new entity containing summarised data. A subset of attributes is chosen from the
+The approach described in this paper overcomes
+The architecture consists of the following components:
+The basic building block used in dimensional modelling is the star schema. A star schema consists of one
+The copyright of this paper belongs to the paper’s authors. Permission to copy without fee all or part of this material is granted
+The fact table forms the “centre” of the star, while
+The first step in producing a dimensional model
+The key of the table is the combination of the keys
+The key of the table is the combination of the keys
+The key of the table is the combination of the keys
+The links between the various fact tables provide the
+The objective of dimensional modelling is to produce database structures that are easy for end users to
+The options are (a) to exclude the industry hierarchy, (b) convert it to a one-to-many relationship or (c)
+The overlap between hierarchies has now been removed.
+The problem with fully collapsing hierarchies occurs
+The problem with using traditional database design
+The separate star clusters may be combined together to form constellations or galaxies.
+The total size of the data warehousing market, including software and hardware, was estimated to be US$8
+There are two major differences between operational
+There is a wide range of options for producing dimensional models from an Entity Relationship model.
+These include:
+This can be used as a basis for designing data marts
+This ensures that data structures are as simple as possible in order to simplify user queries. The next section
+This is where real world data sometimes does not fit the
+This paper describes a method for developing dimensional
+This provides the ability to “drill down” between
+This represents the “wholesale” level of the data
+This results in overlap between the dimensions.
+This section describes a method for developing dimensional models from Entity Relationship models.
+Total Sales ($)
+Towards an Integrated View of Data, ACM Transactions
+Transaction Entities
+Transaction entities record details about particular
+Truck
+Type
+Type
+Type
+Type
+Type
+Type
+Type
+Type
+Type
+Type
+Type Location
+Type Location
+Type Location
+Type Product
+Type Product
+Unit Price
+Unit Price Average Price
+Unit_Price
+University of Melbourne, Parkville, Australia 3052
+Use of this approach also supports the development
+Value
+Value
+Value State_Name
+Value State_Name
+Van Nostrand Reinhold, New York.
+Van Nostrum Reinhold, New York.
+Vehicle
+Vehicle
+Vehicle Type
+Warehouse Data Mart
+We argue that different design principles should be
+We define a star cluster schema as one which has
+We have described a method for developing data
+We have identified a range of options for developing
+We use two operators to produce dimensional models from Entity Relationship models.
+While the approach is not entirely mechanical, it
+Yr
+Yr
+Yr
+Yr
+Yr
+a common enterprise data model (federated architecture). The enterprise data model can be used to ensure
+a general purpose solution to the problem of satisfying
+a hierarchical structure by removing the subtypes and
+a violation to third normal form (Codd, 1970). Collapsing a hierarchy is therefore a form of denormalisation (Tonkin, 1991).
+ability to “drill down” between levels of detail (e.g.
+achieves these objectives primarily by minimising the
+acts as a “parent” in two different dimensional hierarchies. This results in the entity and all of its ancestors
+added to the warehouse in a modular way, and the database structure will support any analysis requirements.
+aggregate by (grouping attributes). Note that aggregation loses information: we cannot reconstruct the details of individual sale items from the product summary
+aggregation, which limits the ways in which data can
+amount (quantity*price), the average quantity per order
+amount will be stored in three different rows in the Sale
+amounts from higher level transaction entities into another they will be repeated. In the example data model,
+analysis requirements, by storing data at the level of
+analysts but will not be amenable to analysis
+analysts using statistical packages such as SAS and
+ancestors. Collapsing should begin again after the
+and Analysis, North-Holland.
+and analysis across the organisation (Inmon, 1993;
+and another subset of attributes chosen to aggregate by
+and average price per item on a daily basis. The aggregation attributes are quantity and price, while the
+and redundancy of data (Figure 23).
+and subject to change over time, which provides an
+approaches to data warehouse design advocate a “first
+are a number of practical problems with this approach:
+are entities with no one-to-many relationships (or
+are possible.
+are unpredictable and subject to frequent change
+as actual tables populated from the central data
+attributes of the collapsed table. This introduces redundancy in the form of a transitive dependency, which is
+attributes to aggregate by, and forming star schemas
+balance between two extremes.
+based on a common enterprise data model simplifies
+based on an enterprise data model.
+based on these. It results in a data warehouse design
+basis for data warehouse design. This makes use of the
+basis for identifying information requirements in a
+be a subset of the model which is relevant for decision support purposes. A staged approach is recommended for implementing the central data
+be aggregated in various ways.
+be analysed
+be carried out. An enterprise data model, if one exists,
+be made in a single place, but tends to penalise retrieval (Kent, 1978). Redundancy is less of an issue in a
+be numerical quantities.
+be used as the basis for enterprise data warehouses”
+be used to design data warehouses and data marts based on
+being collapsed into two separate dimension tables.
+between complexity and redundancy. Here we discuss
+between dimensions. It is a star schema which is selectively “snowflaked” to separate out hierarchical
+billion in 1998 (Sen and Jacob, 1998). A significant
+bottom of the hierarchy, and end up with a single table
+bottom up manner based on what data exists in the
+business event and (among other things) the amount
+but cannot update it. Data stored in the data warehouse is updated via batch extract processes.
+by one-to-many relationships
+by operational (OLTP) systems. Such a model is well
+by the following procedure:
+called Product Summary as in Figure 10. This aggregated entity shows for each product the total sales
+cannot be collapsed into Client.
+claimed. Transaction entities are the most important
+classification entity or a component entity, it should be
+classified as a classification entity. In practice, some
+classifying entities in the data model into a number of categories. The second step involves identifying hierarchies that
+closely based on the enterprise data model, but will
+collapse
+collapse
+collapsed hierarchies) nor a “pure” snowflake schema
+collapsed. There are a number of options for dealing
+complex web of relationships. Even quite simple queries will require multi-table joins, which are errorprone and beyond the capabilities of non-technical users. This is not a problem in transaction processing
+component entity (directly or transitively). Classification entities represent hierarchies embedded in the data
+consistency and integrity of the data. It also provides
+constructing dimension tables in star schemas.
+constructing fact tables in star schemas. Not all transaction entities will be of interest for decision support,
+context as in an operational context and provides a useful basis for designing both data warehouses and data
+corresponds to a distribution function.
+cost (quantity * price).
+counting). Another problem with flat schemas is that
+creating a classification entity to distinguish between
+data
+data
+data from external sources (e.g. census data, economic data) to support analysis
+data is that it reduces the number of tables in the database and the number of relationships between them and
+data is then delivered via data “marts” to data “consumers” (end users). Figure 1 shows a generic architecture for a data warehouse (rectangles indicate data
+data mart such entities may be useful to expert
+data marts to support end user queries from an enterprise data model. These options represent different
+data model. Figure 11 shows the flat schema which
+data model. The method has now been applied in a
+data warehouse design, and ensures that structure of the
+data warehouse is that it provides a consistent, integrated and flexible source of data. We argue that traditional data modelling techniques (Entity Relationship
+data warehouse model as either transaction, component or classification entities.
+data warehouse reflects the underlying semantic structure of the data. It also leads to a more flexible warehouse design, which is resilient to changes in analysis
+data warehouse.
+data warehouse. Component entities form the basis for
+data warehousing environment because data is not updated on-line.
+data. The most important requirement of the central
+database consists of hundreds of tables linked by a
+database designs in the example above, it more than
+databases and data warehouses:
+databases is the use of normalisation. Normalisation
+defeats the purpose of producing simple, user friendly
+deriving dimensional models from Entity Relationship
+describes an approach for developing dimensional
+designers.
+details of business transactions. This is where most
+different dimensions. Subdimensions effectively represent the “highest common factor” between dimensions.
+dimension table should be formed.
+dimensional modelling, and form the primary basis for
+dimensional models than starting from scratch, and can
+dimensions (and key attributes) from the parent entity.
+dimensions) should be combined. This reduces the
+dimensions, each of which contains embedded hierarchies. The aggregated fact is Discount amount.
+dimensions. Unlike a constellation schema, the fact
+diverse organisations.
+documented, and provides a much more structured approach to developing a data warehouse design.
+doubles the number of tables in the schema. In this paper, we argue that neither a “pure” star schema (fully
+down maximal hierarchies, but stopping when they
+email: d.moody@ dis.unimelb.edu.au
+empirically tested, but has clearly been very successful
+end users to understand and use. A typical operational
+enough to support the widest possible range of
+enterprise data model represented in Entity Relationship form. This provides a more structured approach to
+enterprise data models. The first step of the method involves
+enterprise. This can be usefully combined with
+entities do not fit the hierarchical structure of a dimensional model, and cannot be included in star schemas.
+entities in a data warehouse, and form the basis for
+entities in the data model down into the minimal entities. This minimises the number of tables in the database and therefore the possibility that joins will be
+entities into three categories:
+entities will not fit into any of these categories. Such
+entity Client Industry breaks the hierarchical chain and
+entity, by collapsing hierarchically related classification entities into it.
+entity. In all, there are 14 maximal hierarchies in the
+environment is radically different from modelling in an
+errors when there are hierarchical relationships between transaction entities. When we collapse numerical
+et al, 1996).
+events that occur in the business for example, orders,
+evolved considerably as a result of experiences in
+example data model:
+exist already)
+exist in the data model
+exist in the model. The final step involves collapsing these
+extract and load processes
+extract processes and inconsistent results from queries
+extract processes. This may be a more feasible option
+fact table and a number of dimension and subdimension tables. This minimises the number of tables while avoiding overlap between dimensions.
+five dimensions. This includes four dimensions from
+following way:
+for each transaction entity in the central data warehouse model. Each star cluster will consist of a
+for each transaction entity in the data model. Figure 12
+fork entity. When a component entity is reached, a
+form constellations or galaxies.
+form constellations or galaxies. We illustrate the method
+form for analysis by end users. Data marts are usually tailored to the needs of a specific group of users
+form of snowflake schema, which minimises the number of
+from Sale to Sale Item). The constellation schema
+from an Entity Relationship model is to classify the
+from the Sale transaction entity.
+from the model fragment of Figure 17.
+from the operational (OLTP2
+from the parent entity.
+galaxy is of a collection of star schemas with shared
+grouping attributes are Product ID and Date. The key
+has been done, the development of a dimensional
+health, insurance and banking. The method has
+help avoid many of the pitfalls faced by inexperienced
+hierarchies and aggregating transaction data to form dimensional models. A number of design alternatives are presented, including a flat schema, a terraced schema, a star
+hierarchies. Individual schemas can be collected together to
+hierarchy in an Entity Relationship model is any sequence of entities joined together by one-to-many relationships, all aligned in the same direction. Figure 7
+how the operators previously defined may be used to
+http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-28/
+if a Sale consists of three Sale Items, the discount
+if hierarchies become inconsistent. For these reasons,
+important contribution to the discipline of data modelling and database design.
+in Figure 3. In this example, sales data may be analysed by product, customer, retail outlet and date.
+in particular, of data vendors who are in the business of
+in practice. Dimensional modelling has been adopted as
+in that it advocates a “self-service” model rather than
+in the enterprise data model which are relevant for decision making and classifying them. However once this
+in the relationship between IT departments and users,
+include it as a many-to-many relationship.
+independent hierarchies, when they are normalised out
+independent hierarchies. A snowflake schema is a star
+individual transactions. Aggregation of data at this
+industry
+information and restrict the kind of analyses which can
+insurance claims, salary payments and hotel bookings.
+into data marts to support particular analysis requirements. The most important requirement at this level is
+into separate tables. The objective of normalisation is
+involved in a number of industries. The intersection
+is useful for producing a first cut design, but this will
+its “parent” transaction entity (Sale) and one of its own
+large central table called the fact table, and a number of
+level entities within hierarchies. Figure 8 shows the
+level reduces the granularity of data in the data
+level. A normalised database design ensures maximum
+loop.
+lower down Dampney (1996) calls this a commuting
+major 
+makers would find this schema incomprehensible. Even
+manner. Using an Entity Relationship model of the data
+marts.
+marts. The central data warehouse is usually implemented using a traditional relational DBMS.
+marts:
+maximal entities are entities with no many to one relationships (or “root” entities). In the example data
+maximal hierarchy and maximal if it is at the top of
+maximises update efficiency because each change can
+model are collapsed or denormalised to form dimension tables. Each dimension table may contain multiple
+model can take place in a relatively straightforward
+model in a straightforward manner.
+model result from many-to-many relationships or intersection entities. Many-to-many relationships cause
+model there are
+model were clustered to form the star cluster schema.
+model, which may be collapsed into component entities
+model, with State at the top and Sale Item at the bottom.
+modelling is equally applicable in data warehousing
+models and normalisation) are most appropriate at this
+models from an enterprise data model.
+models from traditional Entity Relationship models. This can
+models. As discussed previously, most dimension tables in star schemas contain embedded hierarchies. A
+need to be refined to produce the final data mart design. Most of these modifications have to do with further simplifying the model and dealing with nonhierarchical patterns in the data.
+needed in user queries. In a flat schema we end up
+needs.
+not understand the underlying relationships in the
+number of star schemas and facilitates comparison between related facts (e.g. budget and actual figures).
+number of tables and relationships between them. This
+objective is to maximise the efficiency of queries. It
+of Sale Item
+of both worlds: the simplicity of a star schema while
+of each business transaction. Component entities answer the “who”, “what”, “when”, “where”, “how” and
+of each table (element complexity) is greatly increased.
+of independent but consistent data warehouses based on
+of its associated component entities.
+of schema called a star cluster schema. This is a restricted
+of star schemas with hierarchically linked fact tables.
+of the Fourth Australian DAMA Conference, Melbourne, Australia, October 11-13.
+of the associated component entities.
+of the associated component entities.
+of the data required for decision support is produced.
+of this entity is the combination of the attributes used to
+often results in a large number of dimension tables. To
+on Database Systems, 1(1), March: 9-36.
+one. Minimal entities can be easily identified as they
+only databases users can retrieve and analyse data,
+operational (transaction processing) environment, and
+or a component entity. If a fork is reached, a subdimension table should be formed. The subdimension table will consist of the fork entity plus all its
+or decision making task. They may be “real” (stored
+organisational management information needs. A data
+out from the central table (Figure 2).
+practice. The steps of the method are:
+preserving consistency between dimensions. As with
+principles
+principles” approach, where the structure of the data
+problems for an inexperienced user, because the separation between levels of transaction entities is explicitly
+problems in dimensional modelling because they represent a “break” in the hierarchical chain, and cannot be
+process. The clustering procedure described in Step 3
+procurement function.
+produce different dimensional models.
+produced directly from an Entity Relationship model
+products sold, quantity of products sold) which may
+proportion of IT budgets in most organisations is devoted to data warehousing applications. High levels of
+provided that the copies are not made or distributed for direct commercial advantage.
+provides a much better starting point for developing
+provides much more guidance to designers of data
+providing data in “user-friendly” form to their customers. It is not based on any theory, and has never been
+quite simple queries require multi-table joins and complex subqueries. As a result, end users will be dependent on technical specialists to write queries for them.
+reach a transaction entity. This results in a single table
+reduces the complexity of the database and minimises
+relational DBMS.
+relationship
+relationships in the data which have been already been
+reported in the literature for such applications (Graham
+reports generated by IT specialists. This helps to reduce user reliance on IT staff to satisfy information
+requirements over time.
+requires extra joins. Clearly, expanding all hierarchies
+requires splitting out functionally dependent attributes
+resolving such ambiguities:
+result in confusion for users, increased complexity in
+results from the example data model.
+results in database structures which are too complex for
+results in double-counting (or in this case, triple
+sales application. The highlighted attributes indicate
+schema and a snowflake schema. We also define a new type
+schema from a star cluster schema. This gives the best
+schema with all hierarchies explicitly shown. A snowflake schema can be formed from a star schema by expanding out (normalising) the hierarchies in each dimension. Alternatively, a snowflake schema can be
+segments or subdimensions which are shared between
+should be aggregated by key attributes (dimensions).
+should be aggregated by the key attributes (dimensions). The attributes and functions used depend on
+should be aggregated by the key attributes. The attributes and functions used depend on the application.
+should be consolidated together into a single dimension
+should be used as the basis for structuring the central
+shown.
+shows a hierarchy extracted from the example data
+shows the terraced schema that results from the example data model. This schema is less likely to cause
+simplify the data mart structure, related dimensions
+single table browses. Star schemas may either be implemented in specialist OLAP tools, or using traditional
+smaller tables called dimension tables which radiate
+so user input will be required in identifying which
+source entity to aggregate (the aggregation attributes)
+source of decision support data across the enterprise. This forms the “wholesale level” of the data
+sources, consolidated and reconciled together and
+star schema may have any number of dimensions.
+star schema “mould”.
+star schemas, star clusters may be combined together to
+stored in a consistent format. This corresponds to a
+stored in data marts using “user friendly” query
+stores, while circles indicate processes).
+subtypes. This can then be converted to a dimensional
+suited to a transaction processing environment. It contains no redundancy, thus maximising efficiency of
+summarised e.g. dollar amounts, weights, volumes.
+support end user queries (Pokorny, 1999). Existing
+systems because the complexity of the database structure is hidden from the user by a layer of software.
+table.
+table.
+tables (system complexity) is minimised, the complexity
+tables in a galaxy do not need to be directly related.
+tables while avoiding overlap between different dimensional
+techniques in a data warehousing environment is that it
+temporarily stored in a central data “warehouse”. The
+tends to multiply the number of tables required, as it
+than a single centralised data warehouse in large and
+that data is structured in a way that is easy for users to
+that you must forget all you know about Entity Relationship modelling.
+the Information Base, ISO Technical Report 9007.
+the Sale Item transaction entity. This star schema has
+the Sale transaction entity. This star schema has four
+the application.
+the central data warehouse to the data marts. This
+the consistency of data definitions between the different
+the data mart)
+the data warehouse which provide data in usable
+the dimension tables form the “points” of the star. A
+the example data model. In the diagram,
+the minimal number of tables while avoiding overlap
+the most flexible data structure new data can be easily
+the number of joins required in user queries.
+the predominant approach to designing data warehouses and data marts in practice, and represents an
+the primary keys of each entity.
+the traditional report-driven model. In a data warehousing environment, end users access data directly
+their hierarchies until they reach either a fork entity
+therefore the number of joins required in user queries.
+these problems by using an enterprise data model as the
+they cannot be understood by users and cannot be navigated
+they tend to result in tables with large numbers of attributes, which may be unwieldy. While the number of
+through an application system “front end”. In a traditional application system, the structure of the database is invisible to the user.
+time historical analysis is an important part of any
+to a transaction entity via a one-to-many relationship.
+to component entities by a chain of one-to-many relationships that is, they are functionally dependent on a
+to form dimension tables in a star schema.
+to minimise data redundancy (Codd, 1970). This
+to this rule occurs when the hierarchy converges again
+to understand and analyse. The key characteristics of a
+tools.
+tools.
+trade-offs between the number of tables (complexity)
+traditional Entity Relationship model to a dimensional
+transaction entities, the child entity inherits all dimensions (and key attributes) from the parent entity.
+transaction entities, the child entity inherits all relationships to component entities (and key attributes)
+transaction entities, the child entity should inherit all
+transaction entity are:
+transaction levels.
+transactions are important.
+understand and use. For this reason, dimensional modelling techniques are most appropriate at this level.
+understand and write queries against. A secondary
+unstable basis for design
+updates, and explicitly shows all the data and the relationships between them. Unfortunately most decision
+used for designing the central data warehouse and data
+usefully by DBMS software. Entity relation models cannot
+user satisfaction and return on investment have been
+using a simple example.
+using an OLAP tool.
+using user friendly query tools rather than relying on
+via an explicit design procedure
+warehouse and data mart designs from an enterprise
+warehouse environment and is used to supply data
+warehouse is a database which provides a single consistent source of management information for reporting
+warehouse is derived directly from user query requirements. In this paper, we describe a method for designing data warehouses and data marts based on an
+warehouse reflect the underlying relationships in the
+warehouse with data on a regular basis (daily,
+warehouse) or virtual (defined as views on the central data warehouse). Data marts may be implemented using traditional relational DBMS or OLAP
+warehouse, starting with the most important subject areas.
+warehouse, where data is accessed directly by end users. Data is extracted from the central data warehouse
+warehouse, which is used to supply data marts with
+warehouse, which limits the types of analyses which
+warehouses and data marts than previous approaches.
+warehouses, enabling data to be compared and combined between them. It also allows use of common
+was developed based on observations of practice, and
+we require that dimensions should be orthogonal.
+weekly, monthly). Data is extracted from different
+when hierarchies overlap, leading to redundancy between dimensions when they are collapsed. This can
+which he called dimensional modelling. The method
+which is a set of discrete star schemas. However there
+which results from the example data model is shown in
+wide range of industries, including manufacturing,
+with many-to-many relationships:
+with multiple one-to-many relationships. The exception
+with one table for each minimal entity in the original
+“Entity relation models are a disaster for querying because
+“facts” that need to be aggregated, the dimensional
+“forks” in hierarchies. A fork occurs when an entity
+“leaf” entities in hierarchical terminology), while
+“why” of a business event. For example, a sales transaction may be defined by a number of components:
+• A dimension table is formed for each component
+• A fact table is formed for each transaction entity.
+• A fact table is formed for each transaction entity.
+• A fact table is formed for each transaction entity.
+• An enterprise data model provides a more stable basis for design than user query requirements, which
+• An existing enterprise data model provides a useful
+• Black entities represent Transaction entities
+• Central data warehouse: this acts as the central
+• Classification entities should be collapsed down
+• Customer Type-Customer-Sale-Sale Fee
+• Customer Type-Customer-Sale-Sale Item
+• Customer: who made the purchase
+• Data marts: These represent the “retail outlets” of
+• Developing data warehouse and data mart designs
+• Each component entity becomes a dimension table.
+• End user access: In a data warehousing environment, users write queries directly against the database structure, whereas in an operational environment, users generally only access the database
+• End users: write queries and analyses against data
+• External sources: data warehouses often incorporate
+• Extract processes: these processes “stock” the data
+• Fee Type-Sale Fee
+• Flat schema
+• Grey entities indicate Component entities
+• It can lead to incorrect designs if the designer does
+• It contains measurements or quantities that may be
+• It describes an event that happens at a point in time
+• It ensures that the central data warehouse is flexible
+• It ensures that the data marts and the central data
+• It maximises the integrity of data stored in the central data warehouse
+• It provides a more structured approach to developing dimensional models than working from first
+• It results in loss of information through premature
+• Load processes: these processes distribute data from
+• Location Type-Location-Sale-Sale Fee
+• Location Type-Location-Sale-Sale Item
+• Location: where it was sold
+• Numerical attributes within transaction entities
+• Numerical attributes within transaction entities
+• Numerical attributes within transaction entities
+• Operational systems: these are systems which record
+• Period (posted)-Sale-Sale Fee
+• Period (posted)-Sale-Sale Item
+• Period (sale)-Sale-Sale Fee
+• Period (sale)-Sale-Sale Item
+• Period: when it was sold
+• Product Type-Product-Sale Item
+• Product: what was sold
+• Read-only: data warehouses are effectively read
+• Region is the “child” of State
+• Sale Item, Sale, Location and Region are all “descendants” of State
+• Sale, Location, Region and State are all “ancestors”
+• Six maximal entities: Period, Customer_Type, State,
+• Snowflake schema
+• Star cluster schema
+• Star schema
+• State is the “parent” of Region
+• State-Region-Customer-Sale-Sale Fee
+• State-Region-Customer-Sale-Sale Item
+• State-Region-Location-Sale-Sale Fee
+• State-Region-Location-Sale-Sale Item
+• Terraced schema
+• The approach is presented by examples rather than
+• The dimension tables provide the basis for aggregating the measurements in the fact table.
+• The fact table contains measurements (e.g. price of
+• The fact table is linked to all the dimension tables
+• The primary key of the fact table is the concatenation of the primary keys of all the dimension tables.
+• Two minimal entities: Sale Item and Sale Fee
+• User analysis requirements are highly unpredictable
+• Where hierarchical relationships exist between
+• Where hierarchical relationships exist between
+• Where hierarchical relationships exist between
+• White entities indicate Classification entities
